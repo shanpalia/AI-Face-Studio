@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.shanpalia.aifacestudio'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.shanpalia.aifacestudio'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildTypes {
+        release {
+            // Personal-use starter: GitHub Actions currently builds a debug APK.
+            // Configure a private signing key before publishing a release build.
+            minifyEnabled false
+        }
+    }
+}
